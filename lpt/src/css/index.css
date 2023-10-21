@@ -1,3 +1,5 @@
+/*Landing page*/ 
+
 body {
   background-color: black;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
@@ -6,7 +8,7 @@ body {
 
 .landing-page h1 {
   font-size: 150px;
-  padding-top: 130px;
+  padding-top: 90px;
   text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
 }
@@ -49,6 +51,10 @@ body {
   outline: none; /* Remove the default focus outline */
 }
 
+
+
+
+/*SignUp page*/ 
 .auth-container {
   display: flex;
   justify-content: center;
@@ -58,7 +64,7 @@ body {
 .signup-form,
 .login-form {
   width: 50%; /* Adjusted width for both forms */
-  height: 600px; /* Adjusted height for both forms */
+  height: 550px; /* Adjusted height for both forms */
   border: 2px solid #ddd;
   padding: 10px;
   border-radius: 65px;
@@ -93,9 +99,6 @@ body {
     width: 30%;
   }
 }
-
-
-
 
 .custom-button-1 {
   background-color: black;
@@ -141,6 +144,5 @@ body {
 
 .but 
 {
-  align: center;
-  padding: 3px
+  padding: 3px; 
 }

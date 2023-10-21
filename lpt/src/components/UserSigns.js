@@ -26,7 +26,7 @@ const UserAuthentication = () => {
       .then((userCredential) => {
         setSignUpError("Successful Sign Up");
         console.log(userCredential);
-
+        
       })
       .catch((error) => {
         setSignUpError("Error: " + error.message);
