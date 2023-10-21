@@ -54,7 +54,7 @@ body {
 
 
 
-/*SignUp page*/ 
+/*SignUp page*/
 .auth-container {
   display: flex;
   justify-content: center;
@@ -146,3 +146,6 @@ body {
 {
   padding: 3px; 
 }
+
+
+/*View page*/ 
