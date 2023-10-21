@@ -48,3 +48,99 @@ body {
   transform: translate(0px, -5px) scale(1.05); /* Move the button 5px up and slightly scale up on hover and focus */
   outline: none; /* Remove the default focus outline */
 }
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-form,
+.login-form {
+  width: 50%; /* Adjusted width for both forms */
+  height: 600px; /* Adjusted height for both forms */
+  border: 2px solid #ddd;
+  padding: 10px;
+  border-radius: 65px;
+  margin: 20px;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+  font-size: larger;
+}
+
+.input-box {
+  width: 60%; 
+  padding: 20px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 150px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+  font-size: larger;
+}
+
+/* Media query for smaller screen sizes */
+@media only screen and (max-width: 768px) {
+  .input-box {
+    width: 60%;
+  }
+}
+
+/* Adjust further for even smaller screen sizes if needed */
+@media only screen and (max-width: 480px) {
+  .input-box {
+    width: 30%;
+  }
+}
+
+
+
+
+.custom-button-1 {
+  background-color: black;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+  border: 2px solid white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.26);
+  white-space: nowrap;
+  margin: 25px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Adding transition for smooth movement and box-shadow change */
+}
+
+.custom-button-1:hover,
+.custom-button-1:focus {
+  box-shadow: 0px 10px 15px 5px rgba(255, 255, 255, 0.3); /* Update box-shadow for the hover and focus effect */
+  transform: translate(0px, -5px) scale(1.05); /* Move the button 5px up and slightly scale up on hover and focus */
+  outline: none; /* Remove the default focus outline */
+}
+
+.custom-button-1:active {
+  transform: scale(0.95);
+}
+
+.heu 
+{
+  align:center; 
+  font-size:30px;
+  padding-bottom: 100px;
+}
+
+.subheader 
+{
+  padding: 20px; 
+}
+
+.but 
+{
+  align: center;
+  padding: 3px
+}
