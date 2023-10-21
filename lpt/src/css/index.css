@@ -1,0 +1,50 @@
+body {
+  background-color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+  color: white; 
+}
+
+.landing-page h1 {
+  font-size: 150px;
+  padding-top: 130px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+}
+
+.animated-typing p {
+  font-size: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: #6BB96B;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.custom-button {
+  padding-top: 0px;
+}
+
+.custom-button button {
+  background-color: black;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+  border: 2px solid white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.26);
+  white-space: nowrap;
+  margin: 25px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Adding transition for smooth movement and box-shadow change */
+}
+
+.custom-button button:hover,
+.custom-button button:focus {
+  box-shadow: 0px 10px 15px 5px rgba(255, 255, 255, 0.3); /* Update box-shadow for the hover and focus effect */
+  transform: translate(0px, -5px) scale(1.05); /* Move the button 5px up and slightly scale up on hover and focus */
+  outline: none; /* Remove the default focus outline */
+}
