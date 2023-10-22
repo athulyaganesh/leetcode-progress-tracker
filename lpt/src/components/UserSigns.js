@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
@@ -11,9 +11,8 @@ const UserAuthentication = () => {
   const [loginEmail, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
   const [signUperror, setSignUpError] = useState(null);
-  const [loginError, setLoginError] = useState(null); 
+  const [loginError, setLoginError] = useState(null);
   const navigate = useNavigate();
-  
 
   const handleSignUp = (e) => {
     e.preventDefault();
@@ -29,7 +28,6 @@ const UserAuthentication = () => {
       .then((userCredential) => {
         setSignUpError("Successful Sign Up");
         console.log(userCredential);
-        
       })
       .catch((error) => {
         setSignUpError("Error: " + error.message);
@@ -42,7 +40,7 @@ const UserAuthentication = () => {
       .then((userCredential) => {
         console.log(userCredential);
         setLoginError("Successful Log In");
-        navigate('/view', { state: { user: true } });
+        navigate('/view');
       })
       .catch((error) => {
         setLoginError("Error: " + error.message);
@@ -95,7 +93,7 @@ const UserAuthentication = () => {
               onChange={(e) => setLoginEmail(e.target.value)}
             />
             <input
-              className="input-box" 
+              className="input-box"
               type="password"
               placeholder="Enter your password"
               value={loginPassword}

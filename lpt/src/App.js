@@ -5,6 +5,7 @@ import UserSigns from './components/UserSigns';
 import Solve from './components/Solve';
 import View from './components/View'
 import Settings from './components/Settings'; 
+
 class App extends Component {
   render() {
     return (
