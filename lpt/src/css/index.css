@@ -431,7 +431,7 @@ a:active {
 
 .modal {
   background-color: #000000;
-  padding: 20px;
+  padding: 10px;
   border-radius: 20px;
   max-width: 100%;
   max-height: 100%;
@@ -439,15 +439,15 @@ a:active {
 
 .modal-header {
   color: white;
-  font-size: 18px; /* Adjusted font size */
+  font-size: 13px; /* Adjusted font size */
   text-align: center;
-  margin-bottom: 15px; /* Adjusted margin */
+  margin-bottom: 10px; /* Adjusted margin */
 }
 
 .question-button {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .scrollable-content {
