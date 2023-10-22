@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { v4 as uuidv4 } from 'uuid'; // Importing uuidv4 to generate UUIDs
 import { auth } from "../firebase";
 import Navbar from "./Navbar";
+import ResetPW from "./ResetPW"; 
+import DeleteAccount from "./Delete";
 
 function Settings() {
   const [todo, setTodo] = useState("");
@@ -11,7 +13,7 @@ function Settings() {
   const [isEdit, setIsEdit] = useState(false);
   const [username, setUsername] = useState("");
   const [userEmail, setUserEmail] = useState("");
-  const [consoleMessage, setConsoleMessage] = useState("");
+  //const [consoleMessage, //////setConsoleMessage] = useState("");
 
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
@@ -45,7 +47,7 @@ function Settings() {
           setUsername(e.target.value);
         })
         .catch((error) => {
-          setConsoleMessage("Error updating username: " + error);
+          //////setConsoleMessage("Error updating username: " + error);
         });
     }
   };
@@ -58,7 +60,7 @@ function Settings() {
       const duplicateEmail = todos.find((item) => item.email === userEmail);
   
       if (duplicateUser && duplicateEmail) {
-        setConsoleMessage("Duplicate username and email found!");
+        //////setConsoleMessage("Duplicate username and email found!");
         return;
       } else if (duplicateEmail && !duplicateUser) {
         const userTodo = todos.find((item) => item.email === userEmail);
@@ -70,7 +72,7 @@ function Settings() {
             setIsEdit(false);
           })
           .catch((error) => {
-            setConsoleMessage("Error updating username: " + error);
+            //////setConsoleMessage("Error updating username: " + error);
           });
       } else if (!duplicateEmail && !duplicateUser) {
         const newUuid = uuidv4(); // Generating a new UUID
@@ -82,10 +84,10 @@ function Settings() {
             setIsEdit(false);
           })
           .catch((error) => {
-            setConsoleMessage("Error adding new username: " + error);
+            ////setConsoleMessage("Error adding new username: " + error);
           });
       } else if (duplicateUser && !duplicateEmail) {
-        setConsoleMessage("Assigned to another e-mail address.");
+        ////setConsoleMessage("Assigned to another e-mail address.");
       }
     } else {
       // Logic for when in edit mode
@@ -100,13 +102,13 @@ function Settings() {
   if (userTodo) {
     remove(ref(db, userTodo.uuid))
       .then(() => {
-        setConsoleMessage("Entry successfully removed from the database.");
+        ////setConsoleMessage("Entry successfully removed from the database.");
         setUsername("");
         setIsEdit(true);
         setTodo(""); // Reset the todo state to an empty string
       })
       .catch((error) => {
-        setConsoleMessage("Error removing entry from the database: " + error);
+        //////setConsoleMessage("Error removing entry from the database: " + error);
       });
   }
 };
@@ -135,6 +137,8 @@ function Settings() {
               </div>
             )}
           </div>
+          {/* <ResetPW></ResetPW> */}
+          <DeleteAccount></DeleteAccount>
         </>
       );
   };

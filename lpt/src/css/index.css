@@ -263,3 +263,8 @@ a:active {
 .settings button:active {
   transform: scale(0.95);
 }
+
+.rounded h2 
+{
+  width: 90px; 
+}
