@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { v4 as uuidv4 } from 'uuid'; // Importing uuidv4 to generate UUIDs
 import { auth } from "../firebase";
 import Navbar from "./Navbar";
-import ResetPW from "./ResetPW"; 
+// import ResetPW from "./ResetPW"; 
 import DeleteAccount from "./Delete";
 
 function Settings() {
@@ -123,7 +123,7 @@ function Settings() {
             {!isEdit && username && userEmail ? (
               <div>
                 <p>
-                  Leetcode Username: {username} <button onClick={() => setIsEdit(true)}>Edit</button>
+                  Leetcode Username: {username} <br></br><button onClick={() => setIsEdit(true)}>Edit</button>
                   <button onClick={handleDelete}>Delete</button>
                 </p>
               </div>
@@ -131,8 +131,8 @@ function Settings() {
               <div>
                 <p align="center">
                   Enter Leetcode Username here: <input type="text" value={todo} onChange={handleTodoChange} />{" "}
-                  <button onClick={writeUsernameToDatabase}>Submit</button>
-                  <button onClick={() => setIsEdit(false)}>Cancel</button>
+                  <br></br><button onClick={writeUsernameToDatabase}>Submit</button>
+                 <button onClick={() => setIsEdit(false)}>Cancel</button>
                 </p>
               </div>
             )}

@@ -268,3 +268,130 @@ a:active {
 {
   width: 90px; 
 }
+
+
+/*Solve*/
+
+.solve {
+  margin: 20px;
+}
+
+.solve h2 {
+  text-align: center;
+}
+
+.problems-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.problems-table th,
+.problems-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.solve-button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.solve-button:hover {
+  background-color: #45a049;
+}
+
+.solved-row 
+{
+  background-color:#88b18a; 
+}
+.solve {
+  text-align: center;
+  padding: 20px;
+}
+
+.problems-table {
+  margin: auto;
+  border-spacing: 0;
+  border-collapse: separate;
+  width: 90%;
+}
+
+.problems-table th,
+.problems-table td {
+  padding: 12px;
+  text-align: center;
+}
+
+.problems-table th {
+  background-color: #3f3b3b;
+}
+
+.problems-table tr:nth-child(even) {
+  background-color: #8e8484;
+}
+
+.problems-table tr:hover {
+  background-color: #242424;
+}
+
+.solve-button {
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 8px 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+}
+
+.input-box-search 
+{
+  width: 90%; 
+  padding: 10px;
+  margin: 5px 0;
+  border: 2px solid #ddd;
+  border-radius: 150px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+  font-size: larger;
+}
+
+.in 
+{
+  padding-bottom: 70px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination li {
+  display: inline;
+  margin: 0 5px;
+}
+
+.pagination a {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  color: #333;
+  text-decoration: none;
+}
+
+.pagination .active a {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
