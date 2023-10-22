@@ -77,9 +77,9 @@ body {
 }
 
 .input-box {
-  width: 60%; 
-  padding: 20px;
-  margin: 10px 0;
+  width: 97%; 
+  padding: 10px;
+  margin: 20px 0;
   border: 2px solid #ddd;
   border-radius: 150px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;

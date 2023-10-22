@@ -1,5 +1,6 @@
 import React from 'react';
 import Stopwatch from './Stopwatch';
+import { db } from '../dbconfig';
 
 const ModalComponent = ({ showModal, modalUrl, title, onClose }) => {
   if (!showModal) {
@@ -8,6 +9,34 @@ const ModalComponent = ({ showModal, modalUrl, title, onClose }) => {
 
   const handleClose = (e) => {
     onClose && onClose(e);
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const problemNumber = 'PROBLEM_NUMBER'; // Replace with the actual problem number
+
+    const formData = {
+      help: event.target.help.value,
+      backlog: event.target.backlog.value,
+      notes: event.target.notes.value,
+      time: event.target.time.value,
+      giveup: event.rarget.giveup.value
+      // Add other necessary form fields here
+    };
+
+    const timestamp = new Date().toISOString();
+
+    // Save the data to Firebase
+    try {
+      await db.ref(`attempts/${problemNumber}/`).push({
+        timestamp,
+        data: formData,
+      });
+      console.log('Data saved to Firebase');
+    } catch (error) {
+      console.error('Error saving data to Firebase:', error);
+    }
   };
 
   return (
@@ -28,7 +57,7 @@ const ModalComponent = ({ showModal, modalUrl, title, onClose }) => {
 
           <div className="form-container">
             <h2>Feedback Form</h2>
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="form-group">
                 <label htmlFor="help">Did you need help? If so, how much?</label>
                 <select id="help" name="help">

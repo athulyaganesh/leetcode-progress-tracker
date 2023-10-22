@@ -50,7 +50,7 @@ const UserAuthentication = () => {
   return (
     <>
       <h1 className="heu" align="center">LeetTrack</h1>
-      <div className="auth-container">
+      <div className="auth-container" align = "center">
         <div className="signup-form signs" align="center">
           <form onSubmit={handleSignUp}>
             <h1 align="center" className="subheader">Create Account</h1>
@@ -58,19 +58,19 @@ const UserAuthentication = () => {
             <input
               className="input-box"
               type="email"
-              placeholder="Enter your email"
+              placeholder="Enter your email" align = "center"
               value={signupEmail}
               onChange={(e) => setSignupEmail(e.target.value)}
             />
             <input
-              className="input-box"
+              className="input-box" align = "center"
               type="password"
               placeholder="Enter your password"
               value={signupPassword}
               onChange={(e) => setSignupPassword(e.target.value)}
             />
             <input
-              className="input-box"
+              className="input-box" align = "center"
               type="password"
               placeholder="Confirm your password"
               value={confirmPassword}
@@ -86,14 +86,14 @@ const UserAuthentication = () => {
             <h1 className="subheader" align="center">Log In</h1>
             {loginError && <p align="center">{loginError}</p>}
             <input
-              className="input-box"
+              className="input-box" align = "center"
               type="email"
               placeholder="Enter your email"
               value={loginEmail}
               onChange={(e) => setLoginEmail(e.target.value)}
             />
             <input
-              className="input-box"
+              className="input-box" align = "center"
               type="password"
               placeholder="Enter your password"
               value={loginPassword}
