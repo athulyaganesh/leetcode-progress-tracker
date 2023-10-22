@@ -3,7 +3,6 @@ import Typed from 'react-typed';
 import { Link } from 'react-router-dom';
 import '../css/index.css';
 
-
 class LandingPage extends Component {
     render() {
         return (

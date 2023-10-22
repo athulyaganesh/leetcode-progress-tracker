@@ -1,12 +1,13 @@
 import React from "react";
- 
+import  NavBar from  "./Navbar"; 
+
 const Solve = () => {
     return (
-        <div>
-            <h1>
-                Solve
-            </h1>
+        <>
+        <h1><NavBar></NavBar></h1>
+        <div className = "solve">
         </div>
+        </>
     );
 };
  

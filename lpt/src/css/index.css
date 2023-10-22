@@ -64,7 +64,7 @@ body {
 .signup-form,
 .login-form {
   width: 50%; /* Adjusted width for both forms */
-  height: 550px; /* Adjusted height for both forms */
+  height: 650px; /* Adjusted height for both forms */
   border: 2px solid #ddd;
   padding: 10px;
   border-radius: 65px;
@@ -147,5 +147,62 @@ body {
   padding: 3px; 
 }
 
+::before {
+  content: "";
+  color: white;
+}
 
-/*View page*/ 
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: gray;
+}
+
+a:active {
+  color: white;
+}
+
+.navbar {
+  border-bottom: 2px solid white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+  color: white; 
+  align-items: right;
+  font-size: 40;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar li {
+  float: right;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #e8e1e1;
+  color: black;
+}
+
+.navbar span 
+{
+  padding-top: 1000px;
+  margin-top: 0px;
+
+}

@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import UserSigns from './components/UserSigns'; 
 import Solve from './components/Solve';
 import View from './components/View'
-
+import Settings from './components/Settings'; 
 class App extends Component {
   render() {
     return (
@@ -14,6 +14,7 @@ class App extends Component {
               <Route path='/usersigns' element={<UserSigns />} />
               <Route path='/solve' element={<Solve />} />
               <Route path = '/view' element = {<View/> } /> 
+              <Route path = '/settings' element = {<Settings/>} /> 
           </Routes>
       </Router>
       
